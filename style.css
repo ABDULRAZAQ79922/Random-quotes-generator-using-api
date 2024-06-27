@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+    body
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+  background-image: url(hackclub_logo.png);
+}
+.wrapper
+{
+    width: 600px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    box-shadow: 10px 10px 3px #0ebbf0; 
+}
+header, .content :where(i, p, span)
+{
+    color: #090e20;
+}
+.wrapper header
+{
+    font-size: 50px;
+    font-weight: 700px ;
+    text-align: center;
+    text-shadow: #1f0776;
+    border-bottom: 2px solid black ;
+}
+.wrapper .content
+{
+    margin: 30px 20px 0px;
+}
+.content .quote-area
+{
+    display: flex;
+    justify-content: center;
+}
+.quote-area i
+{
+    font-size: 10px;
+}
+.quote-area i:first-child
+{
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child
+{
+    display: flex;
+    margin: 0 0 10px 3px;
+    align-items: flex-end;
+}
+.quote-area .quote
+{
+    font-size: 24px;
+    text-align: center;
+    word-break: break-all;
+    font-style: italic;
+}
+.content .author
+{
+    display: flex;
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: initial;
+    justify-content: flex-end;
+}
+.author span:first-child
+{
+    margin: 0 4px 0 0;
+    font-family: monospace;
+}
+.features ul
+{
+    display: flex;
+}
+.features ul li
+{
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: #5372F0;
+    list-style: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #5372F0;
+    transition: all 0.3s ease;
+}
+.features ul li:first-child
+{
+    margin-left: 0;
+}
+ul li:is(:hover, .active)
+{
+    color: #fff;
+    background: black;
+}
+ul .speech.active
+{
+    pointer-events: none;
+}
